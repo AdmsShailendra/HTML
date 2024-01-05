@@ -1,0 +1,116 @@
+ body {
+      margin: 50px;
+      height: 100vh;
+      background-color: #c8def1;
+    }
+
+    :root {
+      --theamOne: #3ad96f;
+      --theamTwo: #fdbf24ec;
+      --theamThree: #df1017ec;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .container .card {
+      width: 110px;
+      height: 180px;
+      content: "";
+    }
+
+    .card .cardHeading {
+      background-color: #fff;
+      border-top-left-radius: 60px;
+      content: "";
+      height: 25%;
+      width: 100%;
+      margin-left: 7px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .card .cardBody {
+      background-color: #fff;
+      content: "";
+      height: 70%;
+      width: 100%;
+
+    }
+
+    .ractangle {
+      transform: rotate(45deg);
+      background-color: white;
+      content: "";
+      width: 20px;
+      height: 20px;
+      position: relative;
+      top: -11px;
+      float: right;
+      margin-right: 20px
+    }
+
+    .Footer {
+      width: 110%;
+      content: "";
+      height: 20%;
+
+    }
+
+    .cardMainBody {
+      background-image: linear-gradient(45deg, black, red);
+      width: 100%;
+      padding-left: 7px;
+      padding-right: 7px;
+      border-bottom-right-radius: 32px;
+
+
+    }
+    .cardTheamOne {
+      background-image: linear-gradient(45deg, var(--theamOne), transparent);
+
+    }
+
+    .cardTheamTwo {
+      background-image: linear-gradient(45deg, var(--theamTwo), transparent);
+    }
+    .cardTheamThree {
+      background-image: linear-gradient(45deg, var(--theamThree), transparent);
+    }
+
+    .boxbottomShadow {
+      background-image: linear-gradient(0deg, black, transparent);
+      width: 120px;
+      content: "";
+      height: 26px;
+      border-bottom-right-radius: 60px;
+      -webkit-box-reflect: below 0px linear-gradient(0deg, #0000009e, transparent);
+      position: absolute;
+      z-index: -999;
+      margin-top: -26px;
+      margin-left: -7px;
+    }
+
+    .cardTheamOne .boxbottomShadow {
+      background-image: linear-gradient(0deg, var(--theamOne), transparent);
+      -webkit-box-reflect: below 0px linear-gradient(0deg, var(--theamOne), transparent);
+
+    }
+
+    .cardTheamTwo .boxbottomShadow {
+      background-image: linear-gradient(0deg, var(--theamTwo), transparent);
+      -webkit-box-reflect: below 0px linear-gradient(0deg, var(--theamTwo), transparent);
+
+    }
+
+    .cardTheamThree .boxbottomShadow {
+      background-image: linear-gradient(0deg, var(--theamThree), transparent);
+      -webkit-box-reflect: below 0px linear-gradient(0deg, var(--theamThree), transparent);
+
+    }
